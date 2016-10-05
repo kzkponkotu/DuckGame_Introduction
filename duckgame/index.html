@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="./js/buttons.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="all">
+    <meta charset="UTF-8">
+    <title>DuckGameの紹介</title>
+  </head>
+  <body>
+    <h1>DuckGame</h1>
+    <h2>クリックすると鳴きます</h2>
+      <div id = "duck" onclick=
+      "(function(){
+        document.getElementById( 'sound-file' ).currentTime = 0;
+        document.getElementById( 'sound-file' ).play();
+      })()">
+    </div>
+    <h2>DuckGameについて</h2>
+    <p>
+      DuckGameとはアヒル同士が落ちている武器を持ち、戦うゲームです。
+      <br>
+      1試合がすぐに終わるので誰でも気軽に遊べます。
+      <br>
+      1台のパソコンで4人まで対戦できます。以下のような人にお勧めします。
+      <ul>
+        <li>対戦ゲームが好きな人</li>
+        <li>アクションゲームが好きな人</li>
+        <li>アヒルが好きな人</li>
+      </ul>
+      <p>
+      Steamで1280円で販売されています
+      <br>
+      <a href="http://store.steampowered.com/app/312530/">DuckGame</a>
+      </p>
+    </p>
+    <h2>遊び方</h2>
+    <p>
+      <ul>
+        <li>十字キーで移動</li>
+        <img src="cross.gif">
+        <li>Lボタンで武器を持つ、投げる</li>
+        <img src="Lmotu.gif">
+        <img src="Lnageru.gif">
+        <li>Rボタンで武器を使う</li>
+        <img src="R.gif">
+        <li>Bボタンでジャンプする</li>
+        <img src="B.gif">
+        <li>空中でBボタン長押しで羽ばたく</li>
+        <img src="longB.gif">
+      </ul>
+    </p>
+  </body>
+  <audio id="sound-file" preload="auto">
+     <source src="quack.mp3" type="audio/mp3">
+  </audio>
+</html>
